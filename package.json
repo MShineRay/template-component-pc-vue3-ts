@@ -1,0 +1,30 @@
+{
+  "name": "template-component-pc-vue3-ts",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "cz": "npx git-cz"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-rc.1",
+    "vue-router": "^4.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "cz-conventional-changelog": "^3.2.0",
+    "lerna": "^3.22.1",
+    "vite": "^1.0.0-rc.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "repository": "",
+  "license": "MIT"
+}
