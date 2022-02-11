@@ -22,17 +22,19 @@
     <span v-if="$slots.default"><slot></slot></span>
   </button>
 </template>
-<script lang="ts">
+<script lang='ts'>
 import { computed, inject } from 'vue'
-const ELEMENT:{
-  size?:number;
+const ELEMENT: {
+  size?: number;
 } = {}
+// TODOS: replace these interface definition with actual ElForm interface
 interface ElForm {
-  disabled: boolean;
+  disabled: boolean;  
 }
 interface ElFormItem {
   elFormItemSize: number;
 }
+
 export default {
   name: 'ElButton',
 
